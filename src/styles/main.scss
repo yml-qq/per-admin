@@ -1,0 +1,161 @@
+//全局样式
+//行为颜色
+$n-color-primary: #127BBF;
+$n-color-success: #69C9A4;
+$n-color-warning: #FFD8A0;
+$n-color-error: #EE696B;
+
+//文本颜色
+$n-text-color: #333333;
+$n-text-color-important: #262626;
+$n-text-color-secondary: #666666;
+$n-text-color-grey: #999999;
+
+//背景色
+$n-bg-color: #ffffff;
+
+//文字尺寸
+$n-font-14: 14px;
+$n-font-15: 15px;
+$n-font-16: 16px;
+$n-font-18: 18px;
+$n-font-20: 20px;
+$n-font-24: 24px;
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: $n-text-color-important;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+body,p {
+  margin: 0;
+  padding: 0;
+  color: $n-text-color;
+  font-size: $n-font-14;
+  font-weight: 400;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,微软雅黑,Arial,sans-serif;
+}
+
+ul,ol{list-style-type:none;}
+
+.relative,
+.rela {
+  position: relative;
+}
+
+.absolute,
+.abso {
+  position: absolute;
+}
+
+//布局样式
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.col-center {
+  align-items: center;
+}
+
+.col-top {
+  align-items: flex-start;
+}
+
+.col-bottom {
+  align-items: flex-end;
+}
+
+.row-center {
+  justify-content: center;
+}
+
+.row-left {
+  justify-content: flex-start;
+}
+
+.row-right {
+  justify-content: flex-end;
+}
+
+.row-between {
+  justify-content: space-between;
+}
+
+.row-around {
+  justify-content: space-around;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.wall-width {
+  width: 100%;
+}
+
+.wall-height {
+  height: 100%;
+}
+
+//文本样式
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+
+.font-15 {
+  font-size: $n-font-15;
+}
+
+.el-tooltip__popper{
+  border: none !important;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.1);
+  padding: 7px 15px;
+  margin-bottom: 5px;
+}
+.topath span:nth-of-type(1){
+  font-width: normal !important;
+  color: #606266 !important;
+}
+.addoffer .el-form-item__label {
+  position: relative;
+}
+.addoffer .el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label:before, .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before {
+  content: '*';
+  color: #F56C6C;
+  margin: 0;
+  position: absolute;
+  right: 6px;
+  top: -2px;
+}
